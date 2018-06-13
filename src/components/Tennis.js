@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createPlayers } from '../actions/player';
+import { createPlayers } from '../actions/player.js';
 
 export class Tennis extends Component {
   componentDidMount() {
