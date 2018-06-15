@@ -15,22 +15,23 @@ describe('Tennis', () => {
 
   it('displays name from props', () => {
     expect(tennis.find('.name-box').text()).toEqual('Love-All');
-  })
+  });
+
   it('displays scores from props', () => {
     expect(tennis.find('#score-box1').text()).toEqual('0');
     expect(tennis.find('#score-box2').text()).toEqual('0');
 
-  })
+  });
 
   describe('when user click on the buttons', () => {
     beforeEach(() => {
       tennis.find('#p1-scoreInc-button').simulate('click');
       tennis.find('#p2-scoreInc-button').simulate('click');
-    })
+    });
 
     it('updates score on each of score boxes', () => {
       expect(mockScoreUpdater).toHaveBeenCalledWith('p1',0,0);
       expect(mockScoreUpdater).toHaveBeenCalledWith('p2',0,0);
-    })
+    });
   });
 });

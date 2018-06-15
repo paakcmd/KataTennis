@@ -4,7 +4,6 @@ import App from './App';
 import '../setupTests.js';
 import '../tempPolyfills.js';
 
-
 describe('App', () => {
   const app = shallow(<App />);
 
@@ -14,5 +13,5 @@ describe('App', () => {
 
   it('contains a Tennis component', () => {
     expect(app.find('Connect(Tennis)').exists()).toBe(true);
-  })
+  });
 });

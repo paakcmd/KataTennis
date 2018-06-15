@@ -7,6 +7,5 @@ describe('TennisReducer', () => {
     it('sets a initial state', () => {
       expect(tennisReducer(undefined, {})).toEqual(players);
     });
-
   });
 });
