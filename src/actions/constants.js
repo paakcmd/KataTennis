@@ -1,2 +1,1 @@
-export const CREATE_PLAYERS = 'CREATE_PLAYERS';
 export const UPDATE_SCORE = 'UPDATE_SCORE';
