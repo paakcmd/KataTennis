@@ -1,6 +1,13 @@
 import { UPDATE_SCORE } from '../actions/constants';
 
-const tennis = ( state = { player1:{ score:0 }, player2:{ score :0 }, name: 'Love-All' }, action ) => {
+const initialState =
+{
+  player1:{ score: 0 },
+  player2:{ score: 0 },
+  name: 'Love-All'
+}
+
+const tennis = ( state = initialState, action ) => {
   switch (action.type) {
     case UPDATE_SCORE:
       return action.payload;
