@@ -22,8 +22,8 @@ export class Tennis extends Component {
           <div className="name-box">{ name }</div>
           <div id="score-box1" className="score-box">{ player1 }</div>
           <div id="score-box2" className="score-box">{ player2 }</div>
-          <button id="p1-scoreInc-button" onClick={() => this.scoreUpdater('p1')}>P1</button>
-          <button id="p2-scoreInc-button" onClick={() => this.scoreUpdater('p2')}>P2</button>
+          <button id="p1-scoreInc-button" onClick={() => this.scoreUpdater('p1')}>Increase P1 score</button>
+          <button id="p2-scoreInc-button" onClick={() => this.scoreUpdater('p2')}>Increase P2 score</button>
 
         </div>
 

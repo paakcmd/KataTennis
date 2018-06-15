@@ -12,9 +12,9 @@ export const scoreUpdater = (player, p1_score, p2_score) => {
 
 
 
-  const scores = [ [0, 0, 'Love-ALL'], [0, 1, 'Love-Fifteen'], [1, 0, 'Fifteen-Love'], [1, 1, 'Fifteen-ALL'],
-  [2, 0, 'Thirty-Love'], [2, 1, 'Thirty-Fifteen'], [2, 2, 'Thirty-ALL'], [2,3, 'Thirty-Forty'], [3, 0, 'Forty-Love'], [3, 1, 'Forty-Fifteen'],
-  [3, 2, 'Forty-Thirty'], [3, 3, 'Deuce']]
+  const scores = [ [0, 0, 'Love-ALL'], [0, 1, 'Love-Fifteen'], [0, 2, 'Love-Thirty'], [0, 3, 'Love-Forty'], [1, 0, 'Fifteen-Love'],
+  [1, 1, 'Fifteen-ALL'], [1, 2, 'Fifteen-Thirty'], [1, 3, 'Fifteen-Forty'], [2, 0, 'Thirty-Love'], [2, 1, 'Thirty-Fifteen'], [2, 2, 'Thirty-ALL'], 
+  [2,3, 'Thirty-Forty'], [3, 0, 'Forty-Love'], [3, 1, 'Forty-Fifteen'], [3, 2, 'Forty-Thirty'], [3, 3, 'Deuce']]
 
   if(p1_score <= 3 && p2_score <= 3) {
     scores.forEach( score => {

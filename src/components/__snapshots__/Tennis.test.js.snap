@@ -54,13 +54,13 @@ ShallowWrapper {
                     id="p1-scoreInc-button"
                     onClick={[Function]}
           >
-                    P1
+                    Increase P1 score
           </button>
           <button
                     id="p2-scoreInc-button"
                     onClick={[Function]}
           >
-                    P2
+                    Increase P2 score
           </button>
 </div>,
         <br />,
@@ -95,13 +95,13 @@ ShallowWrapper {
               id="p1-scoreInc-button"
               onClick={[Function]}
 >
-              P1
+              Increase P1 score
 </button>,
             <button
               id="p2-scoreInc-button"
               onClick={[Function]}
 >
-              P2
+              Increase P2 score
 </button>,
           ],
           "id": "row",
@@ -162,12 +162,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "P1",
+              "children": "Increase P1 score",
               "id": "p1-scoreInc-button",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "P1",
+            "rendered": "Increase P1 score",
             "type": "button",
           },
           Object {
@@ -175,12 +175,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "P2",
+              "children": "Increase P2 score",
               "id": "p2-scoreInc-button",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "P2",
+            "rendered": "Increase P2 score",
             "type": "button",
           },
         ],
@@ -228,13 +228,13 @@ ShallowWrapper {
                         id="p1-scoreInc-button"
                         onClick={[Function]}
             >
-                        P1
+                        Increase P1 score
             </button>
             <button
                         id="p2-scoreInc-button"
                         onClick={[Function]}
             >
-                        P2
+                        Increase P2 score
             </button>
 </div>,
           <br />,
@@ -269,13 +269,13 @@ ShallowWrapper {
                 id="p1-scoreInc-button"
                 onClick={[Function]}
 >
-                P1
+                Increase P1 score
 </button>,
               <button
                 id="p2-scoreInc-button"
                 onClick={[Function]}
 >
-                P2
+                Increase P2 score
 </button>,
             ],
             "id": "row",
@@ -336,12 +336,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "P1",
+                "children": "Increase P1 score",
                 "id": "p1-scoreInc-button",
                 "onClick": [Function],
               },
               "ref": null,
-              "rendered": "P1",
+              "rendered": "Increase P1 score",
               "type": "button",
             },
             Object {
@@ -349,12 +349,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "P2",
+                "children": "Increase P2 score",
                 "id": "p2-scoreInc-button",
                 "onClick": [Function],
               },
               "ref": null,
-              "rendered": "P2",
+              "rendered": "Increase P2 score",
               "type": "button",
             },
           ],

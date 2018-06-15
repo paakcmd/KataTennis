@@ -1,13 +1,13 @@
 body {
   text-align: center;
-  margin:5%;
+  margin:0% 5%;
   color:black;
   font-family: 'Roboto', sans-serif;
 }
 
 #wrapper {
-  width: 800px;
-  height: 1000px;
+  width: 500px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -15,8 +15,6 @@ body {
 #row {
   width: 500px;
   height: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .score-box {
   width:200px;
@@ -45,9 +43,11 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px 2px 0 rgba(6, 77, 135, 0.12), 0 0 2px 0 rgba(6, 77, 135, 0.1);
+  font-size:18px;
+  background-color: #EEEEEE;
 }
-button:focus {
-  border: none;
+button:hover {
+  background-color:white;
 }
 
 button:active {
