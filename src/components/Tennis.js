@@ -28,4 +28,4 @@ export class Tennis extends Component {
   }
 }
 
-export default connect( state => { return { tennis: state.tennis }}, { scoreUpdater, scoreInterpret })(Tennis);
+export default connect( state => { return { tennis: state.tennis }}, { scoreUpdater })(Tennis);
