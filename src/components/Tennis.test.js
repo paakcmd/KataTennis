@@ -6,7 +6,7 @@ import '../tempPolyfills.js';
 
 describe('Tennis', () => {
   const mockScoreUpdater = jest.fn()
-  const props = { tennis: { player1:{score:0}, player2:{score:0}, name:'Love-All'}, scoreUpdater:mockScoreUpdater };
+  const props = { tennis: { player1:{score:0}, player2:{score:0}, name:'Love-ALL'}, scoreUpdater:mockScoreUpdater };
   const tennis = shallow(<Tennis {...props} />);
 
   it('renders properly', () => {
@@ -14,7 +14,7 @@ describe('Tennis', () => {
   });
 
   it('displays name from props', () => {
-    expect(tennis.find('.name-box').text()).toEqual('Love-All');
+    expect(tennis.find('.name-box').text()).toEqual('Love-ALL');
   });
 
   it('displays scores from props', () => {

@@ -14,4 +14,5 @@ describe('App', () => {
   it('contains a Tennis component', () => {
     expect(app.find('Connect(Tennis)').exists()).toBe(true);
   });
+  
 });

@@ -11,5 +11,5 @@ describe('score', () => {
     const expectedAction = { type: INCREASE_SCORE_P2 }
     expect(scoreUpdater('p2')).toEqual(expectedAction);
   })
-
+  
 })

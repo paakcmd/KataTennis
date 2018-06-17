@@ -8,7 +8,7 @@ ShallowWrapper {
     scoreUpdater={[Function]}
     tennis={
         Object {
-            "name": "Love-All",
+            "name": "Love-ALL",
             "player1": Object {
               "score": 0,
             },
@@ -39,7 +39,7 @@ ShallowWrapper {
         <div
                 className="name-box"
         >
-                this.props.scoreInterpret(p1Score, p2Score)
+                Love-ALL
         </div>
         <div
                 className="score-box"
@@ -77,7 +77,7 @@ ShallowWrapper {
           <div
             className="name-box"
 >
-            this.props.scoreInterpret(p1Score, p2Score)
+            Love-ALL
 </div>,
           <div
             className="score-box"
@@ -120,11 +120,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "this.props.scoreInterpret(p1Score, p2Score)",
+            "children": "Love-ALL",
             "className": "name-box",
           },
           "ref": null,
-          "rendered": "this.props.scoreInterpret(p1Score, p2Score)",
+          "rendered": "Love-ALL",
           "type": "div",
         },
         Object {
@@ -199,7 +199,7 @@ ShallowWrapper {
           <div
                     className="name-box"
           >
-                    this.props.scoreInterpret(p1Score, p2Score)
+                    Love-ALL
           </div>
           <div
                     className="score-box"
@@ -237,7 +237,7 @@ ShallowWrapper {
             <div
               className="name-box"
 >
-              this.props.scoreInterpret(p1Score, p2Score)
+              Love-ALL
 </div>,
             <div
               className="score-box"
@@ -280,11 +280,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "this.props.scoreInterpret(p1Score, p2Score)",
+              "children": "Love-ALL",
               "className": "name-box",
             },
             "ref": null,
-            "rendered": "this.props.scoreInterpret(p1Score, p2Score)",
+            "rendered": "Love-ALL",
             "type": "div",
           },
           Object {
