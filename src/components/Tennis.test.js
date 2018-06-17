@@ -30,8 +30,8 @@ describe('Tennis', () => {
     });
 
     it('updates score on each of score boxes', () => {
-      expect(mockScoreUpdater).toHaveBeenCalledWith('p1',0,0);
-      expect(mockScoreUpdater).toHaveBeenCalledWith('p2',0,0);
+      expect(mockScoreUpdater).toHaveBeenCalledWith('p1');
+      expect(mockScoreUpdater).toHaveBeenCalledWith('p2');
     });
   });
 });

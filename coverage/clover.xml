@@ -1,36 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1529103311837" clover="3.2.0">
-  <project timestamp="1529103311837" name="All files">
-    <metrics statements="39" coveredstatements="34" conditionals="25" coveredconditionals="21" methods="9" coveredmethods="8" elements="73" coveredelements="63" complexity="0" loc="39" ncloc="39" packages="3" files="6" classes="6">
+<coverage generated="1529259914864" clover="3.2.0">
+  <project timestamp="1529259914864" name="All files">
+    <metrics statements="51" coveredstatements="49" conditionals="24" coveredconditionals="23" methods="10" coveredmethods="9" elements="85" coveredelements="81" complexity="0" loc="51" ncloc="51" packages="4" files="7" classes="7">
       <package name="actions">
-        <metrics statements="22" coveredstatements="19" conditionals="22" coveredconditionals="19" methods="2" coveredmethods="2"/>
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <file name="constants.js" path="/Users/paakcmd/Documents/GitHub/KataTennis/src/actions/constants.js">
-          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="5" type="stmt"/>
+          <line num="2" count="5" type="stmt"/>
         </file>
         <file name="score.js" path="/Users/paakcmd/Documents/GitHub/KataTennis/src/actions/score.js">
-          <metrics statements="21" coveredstatements="18" conditionals="22" coveredconditionals="19" methods="2" coveredmethods="2"/>
+          <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="3" count="3" type="stmt"/>
-          <line num="5" count="25" type="stmt"/>
-          <line num="7" count="25" type="cond" truecount="1" falsecount="1"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="25" type="cond" truecount="1" falsecount="1"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="15" count="25" type="stmt"/>
-          <line num="19" count="25" type="cond" truecount="4" falsecount="0"/>
-          <line num="20" count="16" type="stmt"/>
-          <line num="21" count="256" type="cond" truecount="4" falsecount="0"/>
-          <line num="22" count="16" type="stmt"/>
-          <line num="27" count="25" type="cond" truecount="4" falsecount="0"/>
-          <line num="28" count="9" type="stmt"/>
-          <line num="29" count="9" type="cond" truecount="2" falsecount="0"/>
-          <line num="30" count="2" type="stmt"/>
-          <line num="31" count="7" type="cond" truecount="1" falsecount="1"/>
-          <line num="32" count="7" type="cond" truecount="2" falsecount="0"/>
-          <line num="33" count="4" type="stmt"/>
-          <line num="36" count="3" type="stmt"/>
-          <line num="39" count="0" type="stmt"/>
-          <line num="43" count="25" type="stmt"/>
+          <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
         </file>
       </package>
       <package name="components">
@@ -51,21 +35,55 @@
           <line num="18" count="1" type="stmt"/>
           <line num="25" count="1" type="stmt"/>
           <line num="26" count="1" type="stmt"/>
-          <line num="37" count="0" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
         </file>
       </package>
       <package name="reducers">
-        <metrics statements="5" coveredstatements="4" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <file name="index.js" path="/Users/paakcmd/Documents/GitHub/KataTennis/src/reducers/index.js">
           <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         </file>
         <file name="tennis.js" path="/Users/paakcmd/Documents/GitHub/KataTennis/src/reducers/tennis.js">
-          <metrics statements="5" coveredstatements="4" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="10" count="2" type="cond" truecount="1" falsecount="0"/>
-          <line num="11" count="4" type="cond" truecount="1" falsecount="1"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="15" count="4" type="stmt"/>
+          <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="11" count="2" type="cond" truecount="1" falsecount="0"/>
+          <line num="12" count="6" type="cond" truecount="3" falsecount="0"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="20" count="4" type="stmt"/>
+        </file>
+      </package>
+      <package name="reducers.helper">
+        <metrics statements="25" coveredstatements="24" conditionals="18" coveredconditionals="17" methods="2" coveredmethods="2"/>
+        <file name="score.js" path="/Users/paakcmd/Documents/GitHub/KataTennis/src/reducers/helper/score.js">
+          <metrics statements="25" coveredstatements="24" conditionals="18" coveredconditionals="17" methods="2" coveredmethods="2"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="3" count="29" type="stmt"/>
+          <line num="4" count="29" type="stmt"/>
+          <line num="5" count="29" type="stmt"/>
+          <line num="6" count="29" type="stmt"/>
+          <line num="7" count="29" type="cond" truecount="4" falsecount="0"/>
+          <line num="8" count="20" type="stmt"/>
+          <line num="9" count="80" type="cond" truecount="2" falsecount="0"/>
+          <line num="10" count="20" type="stmt"/>
+          <line num="12" count="80" type="cond" truecount="2" falsecount="0"/>
+          <line num="13" count="20" type="stmt"/>
+          <line num="16" count="20" type="cond" truecount="2" falsecount="0"/>
+          <line num="17" count="4" type="stmt"/>
+          <line num="18" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="23" count="16" type="stmt"/>
+          <line num="27" count="9" type="stmt"/>
+          <line num="28" count="9" type="cond" truecount="2" falsecount="0"/>
+          <line num="29" count="2" type="stmt"/>
+          <line num="30" count="7" type="cond" truecount="1" falsecount="1"/>
+          <line num="31" count="7" type="cond" truecount="2" falsecount="0"/>
+          <line num="32" count="4" type="stmt"/>
+          <line num="35" count="3" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="42" count="29" type="stmt"/>
         </file>
       </package>
     </metrics>

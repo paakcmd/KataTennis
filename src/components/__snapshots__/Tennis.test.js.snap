@@ -30,8 +30,167 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div
+        id="row"
+>
+        <h1>
+                Kata Tennis
+        </h1>
         <div
+                className="name-box"
+        >
+                this.props.scoreInterpret(p1Score, p2Score)
+        </div>
+        <div
+                className="score-box"
+                id="score-box1"
+        />
+        <div
+                className="score-box"
+                id="score-box2"
+        />
+        <button
+                id="p1-scoreInc-button"
+                onClick={[Function]}
+        >
+                Increase P1 score
+        </button>
+        <button
+                id="p2-scoreInc-button"
+                onClick={[Function]}
+        >
+                Increase P2 score
+        </button>
+</div>,
+      "id": "wrapper",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Kata Tennis
+</h1>,
+          <div
+            className="name-box"
+>
+            this.props.scoreInterpret(p1Score, p2Score)
+</div>,
+          <div
+            className="score-box"
+            id="score-box1"
+/>,
+          <div
+            className="score-box"
+            id="score-box2"
+/>,
+          <button
+            id="p1-scoreInc-button"
+            onClick={[Function]}
+>
+            Increase P1 score
+</button>,
+          <button
+            id="p2-scoreInc-button"
+            onClick={[Function]}
+>
+            Increase P2 score
+</button>,
+        ],
+        "id": "row",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Kata Tennis",
+          },
+          "ref": null,
+          "rendered": "Kata Tennis",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "this.props.scoreInterpret(p1Score, p2Score)",
+            "className": "name-box",
+          },
+          "ref": null,
+          "rendered": "this.props.scoreInterpret(p1Score, p2Score)",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 0,
+            "className": "score-box",
+            "id": "score-box1",
+          },
+          "ref": null,
+          "rendered": 0,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 0,
+            "className": "score-box",
+            "id": "score-box2",
+          },
+          "ref": null,
+          "rendered": 0,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Increase P1 score",
+            "id": "p1-scoreInc-button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Increase P1 score",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Increase P2 score",
+            "id": "p2-scoreInc-button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Increase P2 score",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
           id="row"
 >
           <h1>
@@ -40,7 +199,7 @@ ShallowWrapper {
           <div
                     className="name-box"
           >
-                    Love-All
+                    this.props.scoreInterpret(p1Score, p2Score)
           </div>
           <div
                     className="score-box"
@@ -63,13 +222,10 @@ ShallowWrapper {
                     Increase P2 score
           </button>
 </div>,
-        <br />,
-      ],
-      "id": "wrapper",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
+        "id": "wrapper",
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -81,7 +237,7 @@ ShallowWrapper {
             <div
               className="name-box"
 >
-              Love-All
+              this.props.scoreInterpret(p1Score, p2Score)
 </div>,
             <div
               className="score-box"
@@ -124,11 +280,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Love-All",
+              "children": "this.props.scoreInterpret(p1Score, p2Score)",
               "className": "name-box",
             },
             "ref": null,
-            "rendered": "Love-All",
+            "rendered": "this.props.scoreInterpret(p1Score, p2Score)",
             "type": "div",
           },
           Object {
@@ -186,190 +342,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": "br",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <div
-            id="row"
->
-            <h1>
-                        Kata Tennis
-            </h1>
-            <div
-                        className="name-box"
-            >
-                        Love-All
-            </div>
-            <div
-                        className="score-box"
-                        id="score-box1"
-            />
-            <div
-                        className="score-box"
-                        id="score-box2"
-            />
-            <button
-                        id="p1-scoreInc-button"
-                        onClick={[Function]}
-            >
-                        Increase P1 score
-            </button>
-            <button
-                        id="p2-scoreInc-button"
-                        onClick={[Function]}
-            >
-                        Increase P2 score
-            </button>
-</div>,
-          <br />,
-        ],
-        "id": "wrapper",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h1>
-                Kata Tennis
-</h1>,
-              <div
-                className="name-box"
->
-                Love-All
-</div>,
-              <div
-                className="score-box"
-                id="score-box1"
-/>,
-              <div
-                className="score-box"
-                id="score-box2"
-/>,
-              <button
-                id="p1-scoreInc-button"
-                onClick={[Function]}
->
-                Increase P1 score
-</button>,
-              <button
-                id="p2-scoreInc-button"
-                onClick={[Function]}
->
-                Increase P2 score
-</button>,
-            ],
-            "id": "row",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Kata Tennis",
-              },
-              "ref": null,
-              "rendered": "Kata Tennis",
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Love-All",
-                "className": "name-box",
-              },
-              "ref": null,
-              "rendered": "Love-All",
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": 0,
-                "className": "score-box",
-                "id": "score-box1",
-              },
-              "ref": null,
-              "rendered": 0,
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": 0,
-                "className": "score-box",
-                "id": "score-box2",
-              },
-              "ref": null,
-              "rendered": 0,
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Increase P1 score",
-                "id": "p1-scoreInc-button",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "Increase P1 score",
-              "type": "button",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Increase P2 score",
-                "id": "p2-scoreInc-button",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "Increase P2 score",
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "br",
-        },
-      ],
       "type": "div",
     },
   ],

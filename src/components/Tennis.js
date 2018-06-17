@@ -4,10 +4,8 @@ import { scoreUpdater } from '../actions/score';
 
 export class Tennis extends Component {
 
-  scoreUpdater = (player) => {
-    const p1_score = this.props.tennis.player1.score;
-    const p2_score = this.props.tennis.player2.score;
-    this.props.scoreUpdater(player,p1_score,p2_score)
+  scoreUpdater = (playerScore) => {
+    this.props.scoreUpdater(playerScore)
   }
   render() {
     const { tennis } = this.props
