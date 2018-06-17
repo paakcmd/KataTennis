@@ -17,6 +17,7 @@ export const scoreInterpret = (p1Score, p2Score) => {
       }
     })
 
+
     if(name1 === name2){
       name = name1 + '-ALL';
       if(name === 'Forty-ALL') {
@@ -31,6 +32,7 @@ export const scoreInterpret = (p1Score, p2Score) => {
   else {
 
     const score_diff = Math.abs(p1Score - p2Score);
+    
     if(score_diff === 1) {
       name = 'Advantage';
     } else if (score_diff >= 2) {
