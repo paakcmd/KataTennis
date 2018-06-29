@@ -34,9 +34,7 @@ describe('score display', () => {
 
   scores.forEach( score => {
     it(`scores a ${score[0]} - ${score[1]}`, () => {
-      expect(displayScore(score[0],score[1])).toEqual(score[2]);
+      expect(displayScore({ p1: score[0], p2: score[1] })).toEqual(score[2]);
     });
   });
-
-
 })
