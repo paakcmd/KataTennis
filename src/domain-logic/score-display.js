@@ -1,4 +1,4 @@
-import { DEUCE_SCORE, ADV, WIN } from './score-check'
+import { DEUCE_SCORE, ADV, WIN, isDeuce, isAdv, isGameEnded } from './score-check'
 
 const labelOf = {
   0: 'Love',
@@ -14,30 +14,29 @@ const scorePair = (fst, snd) => fst === snd
   ? `${fst}-${ALL}`
   : `${fst}-${snd}`
 
+const getPlayerThat = (status, currentScore) => {
+  if(currentScore.p1 === status) {
+    return 'Player1'
+  }
+  if(currentScore.p2 === status) {
+    return 'Player2'
+  }
+}
+
 export const displayScore = (currentScore) => {
-  const p1Score = currentScore.p1
-  const p2Score = currentScore.p2
+  const { p1, p2 } = currentScore
 
-  const isDeuce = [p1Score, p2Score]
-    .every(score => score === DEUCE_SCORE)
-
-  if(isDeuce) {
+  if(isDeuce(currentScore)) {
     return DEUCE
   }
 
-  if(p1Score === ADV) {
-    return 'Player1 Advantage'
-  }
-  if(p2Score === ADV) {
-    return 'Player2 Advantage'
+  if(isAdv(currentScore)) {
+    return `${getPlayerThat(ADV, currentScore)} Advantage`
   }
 
-  if(p1Score === WIN) {
-    return 'Player1 Won'
-  }
-  if(p2Score === WIN) {
-    return 'Player2 Won'
+  if(isGameEnded(currentScore)) {
+    return `${getPlayerThat(WIN, currentScore)} Won`
   }
 
-  return scorePair(labelOf[p1Score], labelOf[p2Score])
+  return scorePair(labelOf[p1], labelOf[p2])
 }
