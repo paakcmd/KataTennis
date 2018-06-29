@@ -6,7 +6,7 @@ import '../tempPolyfills.js';
 
 describe('Tennis', () => {
   const mockScoreUpdater = jest.fn()
-  const props = { tennis: { p1: 0, p2: 0 }, name:'Love-ALL', scoreUpdater:mockScoreUpdater };
+  const props = { tennis: { p1: 0, p2: 0 }, scoreUpdater: mockScoreUpdater };
   const tennis = shallow(<Tennis {...props} />);
 
   it('renders properly', () => {
