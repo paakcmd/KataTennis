@@ -1,6 +1,6 @@
-import { scoreInterpret } from './score';
+import { scoreInterpret } from './score-display';
 
-describe('score', () => {
+describe('score display', () => {
   // use newlines to make it easier to read
   const scores = [
     [0, 0, 'Love-ALL'],
