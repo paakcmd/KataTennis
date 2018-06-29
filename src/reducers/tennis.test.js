@@ -1,5 +1,5 @@
 import tennisReducer from './tennis';
-import { INCREASE_SCORE_P1 ,INCREASE_SCORE_P2 } from '../actions/constants';
+import { scoreUpdater } from '../actions/score';
 
 describe('TennisReducer', () => {
   describe('when initializing', () => {
@@ -14,7 +14,7 @@ describe('TennisReducer', () => {
         ...initialState,
         p1: 15
       }
-      expect(tennisReducer(undefined, { type: INCREASE_SCORE_P1 })).toEqual(newStateP1);
+      expect(tennisReducer(undefined, scoreUpdater('p1'))).toEqual(newStateP1);
     })
 
     it('increase p2 score', () => {
@@ -22,7 +22,7 @@ describe('TennisReducer', () => {
         ...initialState,
         p2: 15
       }
-      expect(tennisReducer(undefined, { type: INCREASE_SCORE_P2 })).toEqual(newStateP2);
+      expect(tennisReducer(undefined, scoreUpdater('p2'))).toEqual(newStateP2);
     })
 
   });
