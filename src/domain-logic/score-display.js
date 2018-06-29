@@ -14,7 +14,7 @@ const scorePair = (fst, snd) => fst === snd
   ? `${fst}-${ALL}`
   : `${fst}-${snd}`
 
-export const scoreInterpret = (p1Score, p2Score) => {
+export const displayScore = (p1Score, p2Score) => {
   const isDeuce = [p1Score, p2Score]
     .every(score => score === DEUCE_SCORE)
 

@@ -1,4 +1,4 @@
-import { scoreInterpret } from './score-display';
+import { displayScore } from './score-display';
 import { WIN, ADV } from './score-update'
 
 describe('score display', () => {
@@ -34,7 +34,7 @@ describe('score display', () => {
 
   scores.forEach( score => {
     it(`scores a ${score[0]} - ${score[1]}`, () => {
-      expect(scoreInterpret(score[0],score[1])).toEqual(score[2]);
+      expect(displayScore(score[0],score[1])).toEqual(score[2]);
     });
   });
 
