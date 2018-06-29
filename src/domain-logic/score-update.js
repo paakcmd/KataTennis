@@ -1,12 +1,11 @@
 export const WIN = 'WIN'
 export const ADV = 'ADV'
-
-const DUECE_SCORE = 40
+export const DEUCE_SCORE = 40
 
 const isDeuce = currentScore => 
   Object
     .values(currentScore)
-    .every(score => score === DUECE_SCORE)
+    .every(score => score === DEUCE_SCORE)
 
 const isAdv = currentScore => 
   Object
@@ -44,7 +43,7 @@ const advUpdate = (currentScore, scorer) => {
       [scorer]: WIN
     }
   }
-  return { p1: DUECE_SCORE, p2: DUECE_SCORE }
+  return { p1: DEUCE_SCORE, p2: DEUCE_SCORE }
 }
 
 export const updateScore = (currentScore, scorer) => {
