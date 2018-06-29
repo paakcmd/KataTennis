@@ -1,13 +1,13 @@
 
 export const scoreInterpret = (p1Score, p2Score) => {
-
   const nameInterpret = [ [0, 'Love'],[1, 'Fifteen'], [2, 'Thirty'], [3, 'Forty'] ];
   let name = '';
   let name1 = '';
   let name2 = '';
 
-  if(p1Score <= 3 && p2Score <= 3) {
+  const isBeforeFirstAdvantage = p1Score <= 3 && p2Score <= 3
 
+  if(isBeforeFirstAdvantage) {
     nameInterpret.forEach( score => {
       if(score[0] === p1Score) {
         name1 = score[1]
