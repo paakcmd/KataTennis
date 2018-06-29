@@ -1,5 +1,5 @@
 import { displayScore } from './score-display';
-import { WIN, ADV } from './score-update'
+import { WIN, ADV } from './score-check'
 
 describe('score display', () => {
   // use newlines to make it easier to read

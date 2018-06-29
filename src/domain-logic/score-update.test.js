@@ -1,4 +1,5 @@
-import { updateScore, WIN, ADV } from './score-update';
+import { updateScore } from './score-update';
+import { WIN, ADV } from './score-check';
 
 const toString = JSON.stringify
 

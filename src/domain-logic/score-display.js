@@ -1,4 +1,4 @@
-import { DEUCE_SCORE, ADV, WIN } from './score-update'
+import { DEUCE_SCORE, ADV, WIN } from './score-check'
 
 const labelOf = {
   0: 'Love',
