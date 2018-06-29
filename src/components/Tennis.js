@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { scoreUpdater } from '../actions/score';
-import { scoreInterpret } from '../helper/score';
+import { scoreInterpret } from '../domain-logic/score';
 export class Tennis extends Component {
 
   scoreUpdater = (playerScore) => {
