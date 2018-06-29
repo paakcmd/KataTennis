@@ -1,33 +1,36 @@
 import { scoreInterpret } from './score-display';
+import { WIN, ADV } from './score-update'
 
 describe('score display', () => {
   // use newlines to make it easier to read
   const scores = [
     [0, 0, 'Love-ALL'],
-    [0, 1, 'Love-Fifteen'],
-    [0, 2, 'Love-Thirty'],
-    [0, 3, 'Love-Forty'],
-    [1, 0, 'Fifteen-Love'],
-    [1, 1, 'Fifteen-ALL'],
-    [1, 2, 'Fifteen-Thirty'],
-    [1, 3, 'Fifteen-Forty'],
-    [2, 0, 'Thirty-Love'],
-    [2, 1, 'Thirty-Fifteen'],
-    [2, 2, 'Thirty-ALL'],
-    [2, 3, 'Thirty-Forty'],
-    [3, 0, 'Forty-Love'],
-    [3, 1, 'Forty-Fifteen'],
-    [3, 2, 'Forty-Thirty'],
-    [3, 3, 'Deuce'],
-    [4, 3, 'Advantage'],
-    [3, 4, 'Advantage' ],
-    [5, 3, 'Player1 Won'],
-    [7, 5, 'Player1 Won'],
-    [4, 2, 'Player1 Won'],
-    [5, 7, 'Player2 Won'],
-    [2, 4, 'Player2 Won'],
-    [7, 9, 'Player2 Won'],
-    [99, 97, 'Player1 Won']]
+    [0, 15, 'Love-Fifteen'],
+    [0, 30, 'Love-Thirty'],
+    [0, 40, 'Love-Forty'],
+    [15, 0, 'Fifteen-Love'],
+    [15, 15, 'Fifteen-ALL'],
+    [15, 30, 'Fifteen-Thirty'],
+    [15, 40, 'Fifteen-Forty'],
+    [30, 0, 'Thirty-Love'],
+    [30, 15, 'Thirty-Fifteen'],
+    [30, 30, 'Thirty-ALL'],
+    [30, 40, 'Thirty-Forty'],
+    [40, 0, 'Forty-Love'],
+    [40, 15, 'Forty-Fifteen'],
+    [40, 30, 'Forty-Thirty'],
+    [40, 40, 'Deuce'],
+    [ADV, 40, 'Player1 Advantage'],
+    [40, ADV, 'Player2 Advantage' ],
+    [WIN, 0, 'Player1 Won'],
+    [WIN, 15, 'Player1 Won'],
+    [WIN, 30, 'Player1 Won'],
+    [WIN, 40, 'Player1 Won'],
+    [0, WIN, 'Player2 Won'],
+    [15, WIN, 'Player2 Won'],
+    [30, WIN, 'Player2 Won'],
+    [40, WIN, 'Player2 Won'],
+  ]
 
   scores.forEach( score => {
     it(`scores a ${score[0]} - ${score[1]}`, () => {

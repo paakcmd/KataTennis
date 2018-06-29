@@ -1,54 +1,40 @@
-const nameInterpret = {
+import { DEUCE_SCORE, ADV, WIN } from './score-update'
+
+const labelOf = {
   0: 'Love',
-  1: 'Fifteen',
-  2: 'Thirty',
-  3: 'Forty'
+  15: 'Fifteen',
+  30: 'Thirty',
+  40: 'Forty',
 }
 
-const beforeFirstAdvantageInterpret = (p1Score, p2Score) => {
-  const name1 = nameInterpret[p1Score]
-  const name2 = nameInterpret[p2Score]
+const ALL = 'ALL'
+const DEUCE = 'Deuce'
 
-  if(name1 === name2){
-    const name = name1 + '-ALL';
-    if(name === 'Forty-ALL') {
-      return 'Deuce';
-    } else {
-      return name
-    }
-  }
-  else {
-    return name1 + '-' + name2;
-  }
-}
-
-const greaterThan40Interpret = (p1Score, p2Score) => {
-  const score_diff = Math.abs(p1Score - p2Score);
-  
-  if(score_diff === 1) {
-    return 'Advantage';
-  } else if (score_diff >= 2) {
-    if(p1Score - p2Score > 0) {
-      return 'Player1 Won';
-    }
-    else {
-      return 'Player2 Won';
-    }
-  }
-  else {
-    return 'Deuce';
-  }
-}
+const scorePair = (fst, snd) => fst === snd
+  ? `${fst}-${ALL}`
+  : `${fst}-${snd}`
 
 export const scoreInterpret = (p1Score, p2Score) => {
-  const isBeforeFirstAdvantage = p1Score <= 3 && p2Score <= 3
+  const isDeuce = [p1Score, p2Score]
+    .every(score => score === DEUCE_SCORE)
 
-  if(isBeforeFirstAdvantage) {
-    return beforeFirstAdvantageInterpret(p1Score, p2Score)
-  }
-  else {
-    return greaterThan40Interpret(p1Score, p2Score)
+  if(isDeuce) {
+    return DEUCE
   }
 
-  return '';
+  if(p1Score === ADV) {
+    return 'Player1 Advantage'
+  }
+  if(p2Score === ADV) {
+    return 'Player2 Advantage'
+  }
+
+  if(p1Score === WIN) {
+    return 'Player1 Won'
+  }
+  if(p2Score === WIN) {
+    return 'Player2 Won'
+  }
+
+  return scorePair(labelOf[p1Score], labelOf[p2Score])
 }
