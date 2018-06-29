@@ -1,4 +1,4 @@
-import { DEUCE_SCORE, ADV, WIN, isDeuce, isAdv, isGameEnded } from './score-check'
+import {ADV, WIN, isDeuce, isAdv, isGameEnded } from './score-check'
 
 const labelOf = {
   0: 'Love',
