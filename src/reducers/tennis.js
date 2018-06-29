@@ -1,22 +1,16 @@
 import { INCREASE_SCORE_P1 ,INCREASE_SCORE_P2 } from '../actions/constants';
+import { updateScore } from '../domain-logic/score-update'
 
-const initialState =
-{
-  player1:{ score: 0 },
-  player2:{ score: 0 }
-}
+const initialState = { p1: 0, p2: 0 }
 
 const tennis = ( state = initialState, action ) => {
   switch (action.type) {
     case INCREASE_SCORE_P1:
-      const newScoreP1 = state.player1.score + 1;
-      return { ...state, player1: { score: newScoreP1 } }
+      return updateScore(state, 'p1')
     case INCREASE_SCORE_P2:
-      const newScoreP2 = state.player2.score + 1;
-      return { ...state, player2: { score: newScoreP2 } }
+      return updateScore(state, 'p2')
     default:
       return state;
-
   }
 }
 
