@@ -11,8 +11,4 @@ describe('App', () => {
       expect(app).toMatchSnapshot();
   });
 
-  it('contains a Tennis component', () => {
-    expect(app.find('Connect(Tennis)').exists()).toBe(true);
-  });
-  
 });
