@@ -4,12 +4,17 @@ exports[`Tennis renders properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <Tennis
     scoreUpdater={[Function]}
     tennis={
         Object {
-            "p1": 0,
-            "p2": 0,
+            "name": "Love-ALL",
+            "player1": Object {
+              "score": 0,
+            },
+            "player2": Object {
+              "score": 0,
+            },
           }
     }
 />,
